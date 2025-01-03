@@ -1,0 +1,4 @@
+nmap
+requests
+pyinstaller
+pyinstaller-hooks-contrib
