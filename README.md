@@ -41,6 +41,15 @@ Use `wget` to download the binary file from the GitHub releases page:
 wget https://github.com/cyb4x/myNmap/releases/download/mynmap-binary/mynmap
 ```
 
+### 2. Make the binary executable:
+```bash
+chmod +x mynmap
+```
+### 3. 3. Move the binary to a directory in your `$PATH:`
+```bash
+sudo mv mynmap /usr/local/bin/
+```
+
 1. Clone the repository:
    ```bash
    git clone https://github.com/cyb4x/myNmap.git
