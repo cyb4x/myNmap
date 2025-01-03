@@ -61,7 +61,7 @@ sudo mv mynmap /usr/local/bin/
    ```
 3. Make the script executable:
    ```bash
-   chmod +x mynmap.py
+   sudo python3 setup.py
    ```
 
 ---
@@ -73,29 +73,29 @@ Run `mynmap` with `sudo` to ensure proper permissions for Nmap.
 ### Basic Syntax
 
 ```bash
-sudo python3 mynmap.py -t <scan_type> [-f <file>] [-r <targets>]
+sudo mynmap -t <scan_type> [-f <file>] [-r <targets>]
 ```
 
 ### Examples
 
 #### Default TCP Scan (if `-t` is not specified)
 ```bash
-sudo python3 mynmap.py -r 192.168.1.2
+sudo mynmap -r 192.168.1.2
 ```
 
 #### TCP Scan on a Subnet
 ```bash
-sudo python3 mynmap.py -t tcp -r 192.168.1.0/24
+sudo mynmap -t tcp -r 192.168.1.0/24
 ```
 
 #### UDP Scan on a Range of IPs
 ```bash
-sudo python3 mynmap.py -t udp -r 192.168.1.1-192.168.1.10
+sudo mynmap -t udp -r 192.168.1.1-192.168.1.10
 ```
 
 #### Scan Hosts from a File
 ```bash
-sudo python3 mynmap.py -t tcp -f targets.txt
+sudo mynmap -t tcp -f targets.txt
 ```
 
 ---
@@ -111,7 +111,7 @@ sudo python3 mynmap.py -t tcp -f targets.txt
 
 Access the help menu for detailed options:
 ```bash
-python3 mynmap.py -h
+mynmap -h
 ```
 
 ---
