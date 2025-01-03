@@ -40,7 +40,7 @@
    ```
 
 
-## Install the Binary
+## Alternatively Install the Binary
 
 Follow these steps to download, install, and run mynmap on your system:
 
