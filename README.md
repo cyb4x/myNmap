@@ -29,6 +29,18 @@
 
 ## Installation
 
+## Install the Binary
+
+Follow these steps to download, install, and run mynmap on your system:
+
+### 1. Download the precompiled binary:
+
+Use `wget` to download the binary file from the GitHub releases page:
+
+```bash
+wget https://github.com/cyb4x/myNmap/releases/download/mynmap-binary/mynmap
+```
+
 1. Clone the repository:
    ```bash
    git clone https://github.com/cyb4x/myNmap.git
