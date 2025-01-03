@@ -45,11 +45,12 @@ wget https://github.com/cyb4x/myNmap/releases/download/mynmap-binary/mynmap
 ```bash
 chmod +x mynmap
 ```
-### 3. 3. Move the binary to a directory in your `$PATH:`
+### 3. Move the binary to a directory in your `$PATH:`
 ```bash
 sudo mv mynmap /usr/local/bin/
 ```
 
+## Cloning
 1. Clone the repository:
    ```bash
    git clone https://github.com/cyb4x/myNmap.git
