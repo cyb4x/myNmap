@@ -16,7 +16,7 @@ def run_command(command):
 
 def rustscan_scan(rhosts):
     """Run rustscan and retrieve open ports."""
-    rustscan_command = f"rustscan -a {rhosts} --ulimit 5000 --accessible | grep 'Open' | awk -F':' '{{print $2}}' | tr -d ' ' | paste -sd,"
+    rustscan_command = f"rustscan -a {rhosts} --ulimit 10000 --accessible | grep 'Open' | awk -F':' '{{print $2}}' | tr -d ' ' | paste -sd,"
     return run_command(rustscan_command)
 
 def nmap_scan(scan_type, rhosts, rports, input_file=None):
