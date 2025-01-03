@@ -20,14 +20,25 @@
 - Python 3.6+
 - RustScan installed and accessible via the command line.
 - Nmap installed and accessible via the command line.
-- `termcolor` Python library for colored output. Install it using:
-  ```bash
-  pip install termcolor
-  ```
 
 ---
 
 ## Installation
+
+## Cloning
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/cyb4x/myNmap.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd myNmap
+   ```
+3. Make the script executable:
+   ```bash
+   sudo python3 setup.py
+   ```
+
 
 ## Install the Binary
 
@@ -49,21 +60,6 @@ chmod +x mynmap
 ```bash
 sudo mv mynmap /usr/local/bin/
 ```
-
-## Cloning
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/cyb4x/myNmap.git
-   ```
-2. Navigate to the project directory:
-   ```bash
-   cd myNmap
-   ```
-3. Make the script executable:
-   ```bash
-   sudo python3 setup.py
-   ```
-
 ---
 
 ## Usage
