@@ -39,7 +39,12 @@ wget https://github.com/cyb4x/myNmap/releases/download/mynmap/mynmap
 sudo cp mynmap /usr/local/bin
 ```
 
-### 3. Verify Installation:
+### 3. Move the binary:
+```bash
+sudo chmod +x /usr/local/bin/mynmap
+```
+
+### 4. Verify Installation:
 ```bash
 mynmap --help
 ```
