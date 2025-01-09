@@ -102,7 +102,7 @@ mynmap --hosts -i eth0
 ## Output
 
 - Results are displayed on the terminal during the scan.
-- A detailed scan report is saved in the `nmap/` directory with filenames corresponding to the scan type, e.g., `nmap/tcp_ports` or `nmap/udp_ports`.
+- A detailed scan report is saved in the `nmap_output/` directory with filenames corresponding to the scan type, e.g., `nmap_output/tcp_ports` or `nmap_output/udp_ports`.
 
 ---
 
