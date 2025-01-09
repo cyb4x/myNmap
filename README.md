@@ -1,3 +1,5 @@
+![banner](./0.png "banner")
+
 # mynmap
 
 `mynmap` is a simplified wrapper for Nmap, designed to make network scanning quick and effortless. This tool is perfect for those who want to avoid writing long and complex Nmap commands. It abstracts away the intricacies of Nmap's syntax, allowing users to perform scans by specifying only the essentials.
