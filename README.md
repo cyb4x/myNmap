@@ -105,6 +105,10 @@ mynmap --hosts -i eth0
 
 ---
 
+![banner](./2.png "banner")
+
+![banner](./3.png "banner")
+
 ## Help Menu
 
 Access the help menu for detailed options:
