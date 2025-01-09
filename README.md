@@ -1,17 +1,14 @@
 # mynmap
 
-`mynmap` is a Python-based tool that integrates RustScan and Nmap for efficient and fast network scanning. It supports TCP and UDP scans, allows scanning single IPs, IP ranges, subnets, or reading hosts from a file. Results are displayed on the console and saved for further analysis.
+`mynmap` is a simplified wrapper for Nmap, designed to make network scanning quick and effortless. This tool is perfect for those who want to avoid writing long and complex Nmap commands. It abstracts away the intricacies of Nmap's syntax, allowing users to perform scans by specifying only the essentials.
 
 ---
 
 ## Features
 
 - **TCP and UDP Scans**: Choose between TCP and UDP scans with Nmap.
-- **RustScan Integration**: Utilizes RustScan to quickly identify open ports.
 - **Flexible Target Specification**: Scan single IPs, IP ranges, subnets, or use a file for input.
-- **Multithreaded Scanning**: Ensures faster scans.
 - **Save and Display Results**: Outputs scan results both on the terminal and saves them to a file.
-- **Interactive Banner**: Includes a colorful ASCII art banner for a user-friendly interface.
 
 ---
 
@@ -34,37 +31,36 @@
    ```bash
    cd myNmap
    ```
-3. Make the script executable:
+3. Run the setup script to install dependencies and create the binary:
    ```bash
    sudo python3 setup.py
    ```
 
 
-## Alternatively Install the Binary
+## Alternatively Download the Binary
 
-Follow these steps to download, install, and run mynmap on your system:
+Follow these steps to download mynmap on your system:
 
 ### 1. Download the precompiled binary:
 
 Use `wget` to download the binary file from the GitHub releases page:
 
 ```bash
-wget https://github.com/cyb4x/myNmap/releases/download/mynmap-binary/mynmap
+wget https://github.com/cyb4x/myNmap/releases/download/mynmap/mynmap
 ```
 
-### 2. Make the binary executable:
+### 2. Move the binary:
 ```bash
-chmod +x mynmap
+sudo cp mynmap /usr/local/bin
 ```
-### 3. Move the binary to a directory in your `$PATH:`
+
+### 2. Verify Installation:
 ```bash
-sudo mv mynmap /usr/local/bin/
+mynmap --help
 ```
 ---
 
 ## Usage
-
-Run `mynmap` with `sudo` to ensure proper permissions for Nmap.
 
 ### Basic Syntax
 
@@ -74,26 +70,30 @@ sudo mynmap -t <scan_type> [-f <file>] [-r <targets>]
 
 ### Examples
 
-#### Default TCP Scan (if `-t` is not specified)
+#### Default TCP&UDP Scan (if `-t` is not specified)
 ```bash
-sudo mynmap -r 192.168.1.2
+mynmap -r 192.168.1.2
 ```
 
 #### TCP Scan on a Subnet
 ```bash
-sudo mynmap -t tcp -r 192.168.1.0/24
+mynmap -t tcp -r 192.168.1.0/24
 ```
 
 #### UDP Scan on a Range of IPs
 ```bash
-sudo mynmap -t udp -r 192.168.1.1-192.168.1.10
+mynmap -t udp -r 192.168.1.1-192.168.1.10
 ```
 
 #### Scan Hosts from a File
 ```bash
-sudo mynmap -t tcp -f targets.txt
+mynmap -t tcp -f targets.txt
 ```
 
+#### 4. Discover hosts on a specific interface
+```bash
+mynmap --hosts -i eth0
+```
 ---
 
 ## Output
