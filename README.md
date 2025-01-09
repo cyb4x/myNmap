@@ -16,7 +16,7 @@
 
 ## Requirements
 
-- Python 3.6+
+- Python 3
 - Nmap installed and accessible via the command line.
 
 ---
