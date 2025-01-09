@@ -8,7 +8,7 @@
 ## Features
 
 - **TCP and UDP Scans**: Choose between TCP and UDP scans with Nmap.
-- - **Host discovery**: Performs host discovery.
+- **Host discovery**: Performs host discovery.
 - **Flexible Target Specification**: Scan single IPs, IP ranges, subnets, or use a file for input.
 - **Save and Display Results**: Outputs scan results both on the terminal and saves them to a file.
 
