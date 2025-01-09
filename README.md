@@ -17,7 +17,6 @@
 ## Requirements
 
 - Python 3.6+
-- RustScan installed and accessible via the command line.
 - Nmap installed and accessible via the command line.
 
 ---
