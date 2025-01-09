@@ -32,7 +32,7 @@ def nmap_host_discovery(rhosts, interface=None):
     if interface:
         output_file = f"{nmap_dir}/{interface}_hosts.txt"
     else:
-        output_file = f"{nmap_dir}/interface_hosts.txt"
+        output_file = f"{nmap_dir}/hosts.txt"
     
     with open(output_file, "w") as f:
         for host in hosts:
