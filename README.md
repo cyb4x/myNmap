@@ -22,23 +22,7 @@
 
 ## Installation
 
-## Cloning
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/cyb4x/myNmap.git
-   ```
-2. Navigate to the project directory:
-   ```bash
-   cd myNmap
-   ```
-3. Run the setup script to install dependencies and create the binary:
-   ```bash
-   sudo python3 setup.py
-   ```
-
-
-## Alternatively Download the Binary
-
+## Downloading my nmap binary
 Follow these steps to download mynmap on your system:
 
 ### 1. Download the precompiled binary:
@@ -54,10 +38,27 @@ wget https://github.com/cyb4x/myNmap/releases/download/mynmap/mynmap
 sudo cp mynmap /usr/local/bin
 ```
 
-### 2. Verify Installation:
+### 3. Verify Installation:
 ```bash
 mynmap --help
 ```
+
+## Alternatively Clone and Install
+
+Follow these steps to download mynmap on your system:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/cyb4x/myNmap.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd myNmap
+   ```
+3. Run the setup script to install dependencies and create the binary:
+   ```bash
+   sudo python3 setup.py
+   ```
 ---
 
 ## Usage
