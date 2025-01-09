@@ -39,7 +39,7 @@ wget https://github.com/cyb4x/myNmap/releases/download/mynmap/mynmap
 sudo cp mynmap /usr/local/bin
 ```
 
-### 3. Move the binary:
+### 3. Executable permission:
 ```bash
 sudo chmod +x /usr/local/bin/mynmap
 ```
