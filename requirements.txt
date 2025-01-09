@@ -1,3 +1,4 @@
 requests
 pyinstaller
 pyinstaller-hooks-contrib
+termcolor
